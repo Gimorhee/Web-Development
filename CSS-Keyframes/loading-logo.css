@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+@keyframes loading-animation {
+    0% {
+        transform: rotate(0deg);
+        border-top-color: #1fe5bd;
+        border-bottom-color: #1fe5bd;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        border-top-color: #a06ee1;
+        border-bottom-color: #a06ee1;
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+        border-top-color: #ff9d76;
+        border-bottom-color: #ff9d76;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        border-top-color: #5893d4;
+        border-bottom-color: #5893d4;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-top-color: #db2d43;
+        border-bottom-color: #db2d43;
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    background: #ecf0f1;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 10vh;
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 4vw;
+}
+
+h2 {
+    padding-top: 5vh;
+    opacity: 0;
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 3vw;
+    animation-name: text-animation;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.loader {
+    border: 0.85vw solid #dae1e7;
+    width: 6.25vw;
+    height: 12.38vh;
+    margin: auto;
+    border-radius: 50%;
+    border-top-color: #ee4266;
+    border-bottom-color: #0075f6;
+    margin-top: 12vh;
+
+    animation-name: loading-animation;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

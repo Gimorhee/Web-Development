@@ -1,0 +1,49 @@
+@keyframes rainbow-animation {
+    0% {
+        color: red;
+        font-size: 5rem;
+    }
+
+    15% {
+        color: orange;
+        transform: translateX(2vw);
+    }
+
+    30% {
+        color: yellow;
+        transform: translateX(10vw);
+    }
+
+    50% {
+        color: green;
+        font-size: 15rem;
+        transform: translateX(25vw);
+    }
+
+    60% {
+        color: blue;
+        transform: translate(25vw, 20vw);
+
+    }
+
+    80% {
+        color: #2d248a;
+        transform: translate(10vw, 20vw);
+
+    }
+
+    100% {
+        color: purple;
+        font-size: 5rem; 
+        transform: translateX(2vw);
+
+    }
+}
+
+p {
+    animation-name: rainbow-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
