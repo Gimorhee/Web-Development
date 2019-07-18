@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 500px;
+}
+
+.btn {
+    padding: 30px;
+    margin-top: 15px;
+    font-family: Raleway;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background: #ff0b55;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px #d61d4e;
+}
+
+.btn:hover {
+    box-shadow: 0 4px #d61d4e;
+    top: 2px;
+}
+
+.btn:active {
+    box-shadow: none;
+    top: 6px;
+}
