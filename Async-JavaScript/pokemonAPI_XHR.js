@@ -1,7 +1,8 @@
 const url = "https://pokeapi.co/api/v2/pokemon/"
 const bodyContent = document.getElementById("body-content");
+let pokemonNumber = Math.floor(Math.random() * 999);
 
-function getPokemonName(number, callback) {
+function getRandomPokemon(number, callback) {
     const XHR = new XMLHttpRequest();
 
     XHR.onreadystatechange = () => {
@@ -20,8 +21,8 @@ function getPokemonName(number, callback) {
     XHR.send();
 }
 
-getPokemonName(136, (pokemonData) => {
+getRandomPokemon(pokemonNumber, (pokemonData) => {
 
-    bodyContent.appendChild(document.createTextNode(pokemonData));
+    bodyContent.appendChild(document.createTextNode(pokemonData[0].toUpperCase() + pokemonData.slice(1)));
     console.log(pokemonData);
 })
