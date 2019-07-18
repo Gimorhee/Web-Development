@@ -14,7 +14,7 @@ function promiseCounter(callback, time) {
         }, time);
     });
 
-    return result;
+    return result; 
 }
 
 promiseCounter(counter, 1000).then(() => {
@@ -22,3 +22,4 @@ promiseCounter(counter, 1000).then(() => {
 }).then(() => {
     return promiseCounter(counter,3000);
 });
+
